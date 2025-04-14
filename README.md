@@ -40,6 +40,7 @@
         *   ShodanX
         *   crt.sh
         *   Amass
+        *   from builtwith `https://github.com/m4ll0k/BBTz/blob/master/getrelationship.py`
     *   crt.sh command example:
         ```bash
         curl -s "https://crt.sh/?q=%25.target.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | anew crtsh_subs.txt
