@@ -18,6 +18,10 @@
     ```bash
     curl -s https://crt.sh/\?q\=%.target.com\&output\=json | jq -r '.[].name_value' | sort -u
     ```
+*   Get subdomains from [csprecon](https://github.com/edoardottt/csprecon):
+    ```bash
+    csprecon -l targets.txt
+    ```
 *   Get historical robots.txt entries from Web Archive:
     ```bash
     curl -s "http://web.archive.org/cdx/search/cdx?url=target.com/robots.txt&output=json" | jq '.[1:] | .[] | .[2]' | sort -u > historical_robots.txt
@@ -25,6 +29,10 @@
 *   Scrape Pastebin for mentions of the target domain:
     ```bash
     curl -s "https://scrape.pastebin.com/api_scraping.php?limit=100" | grep -Eo "target\.com" | sort -u
+    ```
+*   Try to Find Some data by trufflehog:
+    ```bash
+    trufflehog s3 --bucket="", trufflehog github --repo="", trufflehog github --org="", trufflehog git "", trufflehog gcs --project-id="", trufflehog filesystem "", trufflehog postman --token=<postman api token> --workspace-id=<workspace id>
     ```
 
 ## Initial Automated Scans & Vulnerability Assessment
