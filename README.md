@@ -142,6 +142,10 @@
         ```bash
         cat urls.txt | grep ".js" | while read url; do curl -s "$url" | grep -Eo "https?://[^\"']+"; done | tee js_endpoints.txt
         ```
+    *   Scan Js files by nuclei:
+        ```bash
+        nuclei -l js.txt -t ~/nuclei-templates/http/exposures/ -o js_bugs.txt
+        ```
         *(Note: `urls.txt` should contain URLs, potentially from step 13)*
 
 17. **Broken Link Hijacking:**
