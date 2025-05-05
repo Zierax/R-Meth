@@ -352,6 +352,7 @@
 *   **Version Exploitation:** If you find specific versions for Nginx, Apache, Jfrog, etc., search for related CVEs/exploits on Google, GitHub, ExploitDB, etc.
 
 *   **Link finder:** after you get all javascript files from burp, [Detailed Article](https://kpwn.de/2023/05/javascript-analysis-for-pentesters/). use  [LinkFinder](https://github.com/GerbenJavado/LinkFinder).
+*   **Lostsec Site:** this site contains a lot of usefull commands, [lostsec.xyz](https://lostsec.xyz/).
 
 *   **Browser Console Endpoint Extraction:** Use this JavaScript snippet in the browser console to extract all linked endpoints from the current page:
     ```javascript
